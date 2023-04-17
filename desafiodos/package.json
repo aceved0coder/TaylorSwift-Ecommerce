@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"name": "desafioCinco",
 	"version": "1.0.0",
@@ -19,3 +20,19 @@
 		"socket.io": "^4.6.1"
 	}
 }
+=======
+{
+    "name": "desafiodos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "ProductManager.js",
+    "type": "module",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  
+>>>>>>> 12fe9da8e13fbbabb90323c54da3e75de9cb0195
