@@ -1,8 +1,9 @@
 const { Router } = require("express");
-const CartManager = require("../dao/models/cart.model");
+const CartManager = require("../Dao/mongo/CartManager");
 // const CartManager = require("../CartManager");
 
 const router = Router();
+const cartManager = new CartManager();
 
 router.get("/:cId", async (req, res) => {
 	try {

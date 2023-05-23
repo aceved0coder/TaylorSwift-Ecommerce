@@ -1,6 +1,6 @@
-const Products = require("../../dao/models/product.model");
+const Products = require("../../dao/model/product.model");
 const connection = require("../../db");
-require("dotenv").config();
+// require("dotenv").config();
 
 async function filtro(
     type,

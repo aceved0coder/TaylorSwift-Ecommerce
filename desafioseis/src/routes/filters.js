@@ -5,17 +5,21 @@ const router = Router();
 
 router.get("/filters", async (req, res, next) => {
   let {
-    type,
     category,
-    priceMin,
-    priceMax,
+    jersey_size,
+    short_size,
+    shoes_size,
+    equipment_size,
+    price
   } = req.query;
   try {
     const filter = await filtro(
-      type,
-      category,
-      priceMin,
-      priceMax,
+        category,
+        jersey_size,
+        short_size,
+        shoes_size,
+        equipment_size,
+        price
     );
     res.status(200).send(filter);
   } catch (err) {

@@ -8,7 +8,7 @@
      filename: (req, file, callback)=>{
          callback(null, `${Date.now()}-${file.originalname}`)
      }
- })
+ }) // nombre del archivo - ubicación
 
  const uploader = multer({
      storage,
@@ -18,6 +18,6 @@
      }
  })
 
- module.exports={
-     uploader
- }
+// module.exports={
+//     uploader
+// }
