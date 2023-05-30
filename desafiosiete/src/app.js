@@ -44,28 +44,6 @@ app.use(express.urlencoded({extended: true}))
 app.use('/static', express.static(__dirname+'/public'))
 app.use(cookieParser('P@l@braS3cr3t0'))
 
-
-// mid de tercero 1
-// app.use(session({
-    //     secret: 'secretCoder',
-    //     resave: true,
-    //     saveUninitialized: true
-    // }))    
-    
-// const fileStore = FileStore(session)
-
-// app.use(session({
-//         store: new fileStore({
-//             ttl: 10,
-//             path: './session',
-//             retries: 0
-//         }),
-
-//         secret: 'secretCoder',
-//         resave: true,
-//         saveUninitialized: true
-// })) 
-
 // mongo
 app.use(session({
         store: create({
