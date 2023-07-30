@@ -16,14 +16,6 @@ router.get('/register', (req, res) => {
 })
 
 
-
-
-
-
-
-
-
-
 let food = [
   {name: 'Hamburguesa', price: 150},
   {name: 'producto 1', price: 250},
