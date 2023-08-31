@@ -16,7 +16,7 @@ const swaggerUiExpress = require('swagger-ui-express')
 
 const app = express() 
 const PORT = process.env.PORT||8080 
-const connection = mongoose.connect(`mongodb+srv://facumanta10:6VXFGaou1y8F4X8H@fmantabackend.tpf6egh.mongodb.net/miEcommerce`)
+const connection = mongoose.connect(`mongodb+srv://acevedocoder:OvgvzAEu5Eq6gPEP@cluster0.qjk7yms.mongodb.net/Ecommerce`)
 logger.info('Base de datos conectada')
 
 app.engine('handlebars',handlebars.engine());
