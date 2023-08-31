@@ -1,7 +1,6 @@
-<div>
-    <h1>Inyección de cookies</h1>
-    {{!-- <form id="cookieForm" onsubmit="return false"> --}}
-    <form id="cookieForm" action="/sessions/login" method="POST">
+    <div>
+        <h1>Login</h1>
+    <form id="cookieForm" action="api/sessions/login" method="POST">
         <label>Email</label>
         <input name="email">
         <br />
@@ -10,7 +9,17 @@
         <input name="password">
         <input type="submit">
     </form>
-    <a href="/sessions/github">Entrar con Github</a>
-    {{!-- <button onclick="getCookie()">Ver Cookie</button> --}}
-</div>
-{{!-- <script src="/static/js/cookieSetter.js"></script> --}}
+    <a href="/api/sessions/github">Entrar con Github</a>
+
+    <p>No tienes una cuenta? <a href="/register">Regístrate</a></p>
+    </div>
+
+    <script>
+        console.log('prueba')
+    const response = {{responseJson}}; // Asigna aquí tu respuesta JSON
+    if (response.status === 'success' && response.redirectTo) {
+        window.location.href = response.redirectTo;
+    }
+</script>
+
+

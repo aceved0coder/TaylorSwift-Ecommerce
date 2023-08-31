@@ -3,25 +3,30 @@ const { auth } = require('../utils/middlewares/authentication.middleware')
 const { userModel } = require('../dao/model/users.model')
 const { createHash, isValidPassword } = require('../utils/bcryptHash')
 const passport = require('passport')
-
+const {login, register} = require('../controllers/sessions.controller')
 const router = Router()
 
 
 // login
-router.post('/login', passport.authenticate('login', {failureRedirect: '/faillogin'}), async (req,res) => { 
-    if (!req.user) return res.status(401).send({status: 'error', message: 'invalid credencial'})
-    req.session.user= {
-        first_name: req.user.first_name,
-        last_name: req.user.last_name,
-        email: req.user.email
-    }
-    res.send({status: 'success', message: 'User registered'})
-})
+router.post('/login', login)
+router.post('/register', register)
+
+// router.post('/login', passport.authenticate('login', {failureRedirect: '/faillogin'}), async (req,res) => {
+//     console.log('Falló la estrategia') 
+//     if (!req.user) return res.status(401).send({status: 'error', message: 'invalid credencial'})
+//     req.session.user= {
+//         first_name: req.user.first_name,
+//         last_name: req.user.last_name,
+//         email: req.user.email
+//     }
+//     res.send({status: 'success', message: 'User logedIn'})
+// })
 
 router.get('/faillogin', async (req,res)=>{
     console.log('Falló la estrategia')
     res.send({status: 'error', error: 'falló autenticación'})
 })
+
 
 // succesRedirect
 router.post('/register', passport.authenticate('register', {failureRedirect: '/failregister'}), async (req,res) => {    
@@ -82,3 +87,90 @@ router.get('/privada', auth,(req,res) => {
 })
 
 module.exports = router
+
+
+// const { Router } = require('express')
+// const {login, register} = require('../controllers/sessions.controller')
+// const userManager = require('../dao/user.mongo')
+// const { isValidPassword, createHash } = require('../utils/bcryptHash')
+
+
+// // sirve para usar en las rutas que necesitan protección
+// const { passportAuth } = require('../passport-jwt/passportAuth')
+// const { authorizaton } = require('../passport-jwt/passportAuthorization')
+
+
+
+
+// const router = Router()
+
+// router.post('/login', async (req, res) => {
+//     console.log("etoy", req.body)
+//     const { email, password } = req.body;
+
+  
+//     try {
+
+//        const user = await userManager.getUserByEmail(email);
+//        console.log("user", user);
+       
+//        const pasValid =  isValidPassword(password, user);
+//       if (!user ||  !pasValid) {
+ 
+//        return res.status(401).json({ status: 'error', message: 'Credenciales inválidas' });
+//    }
+  
+    
+//       res.status(200).json({ status : "Bienvenido usuario " + user.first_name });
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json({ status: 'error', message: 'Error en el servidor' });
+//     }
+//   });
+  
+//   router.post('/register', async (req, res) => {
+//     console.log("etoy", req.body)
+//     const { first_name, last_name, email, password } = req.body;
+  
+//     try {
+
+//        const passwordHash = createHash(password);
+//        const user = await userManager.addUser({first_name, last_name, email, password: passwordHash});
+//        console.log("user", user);
+
+//       if (!user ) {
+
+//        return res.status(401).json({ status: 'error', message: 'Error, no se creo el usuario' });
+//    }
+
+//       res.status(200).json({ status : "Usuario " + user.first_name + " creado con exito"});
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json({ status: 'error', message: 'Error en el servidor' });
+//     }
+//   });
+  
+// // router.post('/login', login)
+
+// router.post('/register', register)
+    
+// router.get('/current', 
+//         passportAuth('jwt'), 
+//         authorizaton('admin'),
+//         (req, res)=> {
+//             res.send('current')
+//     })
+//     router.get('/allUsers', passportAuth('jwt'), authorizaton('user'),async (req,res)=>{
+//         try {
+//             const users = await userManager.getUsers()
+//             res.status(200).send({
+//                 status: 'success',
+//                 payload: users
+//             })
+            
+//         } catch (error) {
+//             cconsole.log(error)
+//         }
+//     })
+
+// module.exports = router

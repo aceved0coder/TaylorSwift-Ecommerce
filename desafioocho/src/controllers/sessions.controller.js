@@ -4,15 +4,14 @@ const { generateToken } = require("../utils/generateTokenJwt")
 class SessionController {
 
     login = (req, res)=>{
+        
         const {email, password} = req.body
-        console.log('email', req);
-        console.log('password', password);
         // generateToken
         const user = {
-            first_name: 'Nati',
-            last_name: 'Acevedo', 
+            first_name: 'Facu',
+            last_name: 'Manta', 
             role: 'user',
-            email: 'nata@gmail.com'
+            email: 'fm@gmail.com'
         }
 
         const token = generateToken(user)
@@ -20,19 +19,21 @@ class SessionController {
         res.cookie('coderCookieToken', token, {
             maxAge: 60*60*10000,
             httpOnly: true
-        }).send({
-            status: 'success',
-            token
+        }) .send({
+             status: 'success',
+             token,
+        //     redirectTo: '/home' 
         })
+       res.redirect('/home'); 
     }
 
     register = (req, res)=>{
 
         const user = {
-            first_name: 'Nati',
-            last_name: 'Acevedo', 
+            first_name: 'Facu',
+            last_name: 'Manta', 
             role: 'user',
-            email: 'nata@gmail.com'
+            email: 'fm@gmail.com'
         }
 
         const token = generateToken(user)
