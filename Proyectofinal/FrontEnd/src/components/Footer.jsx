@@ -71,7 +71,7 @@ export const Footer = () => {
                     </div>
                     <div className='flex gap-2 mt-4'>
                         <FiMail className='text-2xl text-black'/>
-                        <p>nbastore@uruguay.com</p>
+                        <p>taylorswift@uruguay.com</p>
                     </div>
                     <div className='text-2xl text-myDarkColor flex justify-center gap-8 mt-5 cursor-pointer'>
                         <FiFacebook className='hover:fill-myLightGreen hover:text-myDarkBlue transition-all' />
@@ -84,7 +84,7 @@ export const Footer = () => {
         <div className='bg-[white] py-2'>
             <div className='container mx-auto flex-col md:flex-row gap-3 flex justify-between items-center'>
                 <p><span className='mr-1'>&copy;</span>2023 All Rights Reserved</p>
-                <p>Software developed by <a className='text-Blue hover:text-pink-500' target='__blank' href="https://github.com/Facucoder2022">Natalia Acevedo</a></p>
+                <p>Software developed by <a className='text-Blue hover:text-pink-500' target='__blank' href="https://github.com/aceved0coder">Natalia Acevedo</a></p>
             </div>
         </div>
     </>
