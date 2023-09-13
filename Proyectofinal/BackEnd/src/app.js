@@ -43,7 +43,7 @@ app.use(express.urlencoded({extended: true}))
 app.use('/static', express.static(__dirname+'/public'))
 app.use(cookieParser())
 app.use(cors({
-    origin: ['https://tokytechfrontend.onrender.com', 'http://localhost:5173', 'http://localhost:4173'],
+    origin: 'http://localhost:5173',
     credentials: true
 }))
 
