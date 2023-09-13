@@ -1,0 +1,233 @@
+[{
+    "title": "Friendship Bracelet",
+    "description": "Friendship Bracelet - All Eras Taylor Swift",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61VUQOIl8CL._AC_UX569_.jpg"],
+    "category": "Accesories",
+    "price": 490,
+    "stock": 1000,
+    "status": true,
+    "code": "FB1234",
+    "owner": "admin"
+},
+{
+    "title": "Music Poster",
+    "description": "Music Poster - Taylor Swift",
+    "thumbnails": ["https://m.media-amazon.com/images/I/81xe+HZim5L._AC_SX679_.jpg"],
+    "category": "Accesories",
+    "price": 180,
+    "stock": 1000,
+    "status": true,
+    "code": "MP1234",
+    "owner": "admin"
+},
+{
+    "title": "Swiftie Cup",
+    "description": "Taylor Swift Cup - White/Pink",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61+yzvk9B9L._AC_SX569_.jpg"],
+    "category": "Accesories",
+    "price": 390,
+    "stock": 500,
+    "status": true,
+    "code": "SC1234",
+    "owner": "admin"
+},
+{
+    "title": "Songs Poster",
+    "description": "Taylor Swift - Songs Poster",
+    "thumbnails": ["https://m.media-amazon.com/images/I/81kzN2iHhPL._AC_SX679_.jpg"],
+    "category": "Accesories",
+    "price": 299,
+    "stock": 1000,
+    "status": true,
+    "code": "SP12345",
+    "owner": "admin"
+},
+{
+    "title": "Swiftie Key Ring",
+    "description": "Taylor Swift - Key Ring",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61HAZu9I0JL._AC_UX569_.jpg"],
+    "category": "Accesories",
+    "price": 490,
+    "stock": 100,
+    "status": true,
+    "code": "SK1234",
+    "owner": "admin"
+},
+{
+    "title": "Eras Thermo",
+    "description": "Taylor Swift - Eras Thermo",
+    "thumbnails": ["https://m.media-amazon.com/images/I/71FKNljy51L._AC_SX569_.jpg"],
+    "category": "Accesories",
+    "price": 590,
+    "stock": 100,
+    "status": true,
+    "code": "ET1234",
+    "owner": "admin"
+},
+{
+    "title": "100 Taylor Swift Stickers",
+    "description": "100 Taylor Swift Stickers",
+    "thumbnails": ["https://m.media-amazon.com/images/I/81CfSbJq5gL._AC_SX569_.jpg"],
+    "category": "Accesories",
+    "price": 199,
+    "stock": 2000,
+    "status": true,
+    "code": "TSS1234",
+    "owner": "admin"
+},
+{
+    "title": "Tote Bag Album Taylor",
+    "description": "Tote Bag Album Taylor",
+    "thumbnails": ["https://m.media-amazon.com/images/I/81bznFVqKAL._AC_UX569_.jpg"],
+    "category": "Accesories",
+    "price": 650,
+    "stock": 100,
+    "status": true,
+    "code": "TB1234",
+    "owner": "admin"
+},
+{
+    "title": "Pua Earings",
+    "description": "Taylor Swift - Pua Earings",
+    "thumbnails": ["https://m.media-amazon.com/images/I/510mJempf1L._AC_UX679_.jpg"],
+    "category": "Accesories",
+    "price": 199,
+    "stock": 1000,
+    "status": true,
+    "code": "PE1324",
+    "owner": "admin"
+},
+{
+    "title": "Jeweler Eras Taylor",
+    "description": "Taylor Swift - Jeweler",
+    "thumbnails": ["https://m.media-amazon.com/images/I/810ePcabC6L._AC_SX522_.jpg"],
+    "category": "Categoría del producto",
+    "price": 1100,
+    "stock": 100,
+    "status": true,
+    "code": "JE1234",
+    "owner": "admin"
+},
+{
+    "title": "Aromatherapy Fragancy",
+    "description": "Taylor Swift - Aromatherapy Fragancy",
+    "thumbnails": ["https://m.media-amazon.com/images/I/71Ai1buwxqL._AC_SX466_PIbundle-10,TopRight,0,0_SH20_.jpg"],
+    "category": "Categoría del producto",
+    "price": 210,
+    "stock": 1000,
+    "status": true,
+    "code": "AF1234",
+    "owner": "admin"
+},
+{
+    "title": "Multiple Taylor Pins",
+    "description": "Taylor Swift - Multiple Pins",
+    "thumbnails": ["https://m.media-amazon.com/images/I/71EJmXOaYxL._AC_UX569_.jpg"],
+    "category": "Accesories",
+    "price": 250,
+    "stock": 1000,
+    "status": true,
+    "code": "MT1253",
+    "owner": "admin"
+},
+{
+    "title": "Poster All Too Well",
+    "description": "Poster All Too Well",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61ngoh2ioAL._AC_SX679_.jpg"],
+    "category": "Accesories",
+    "price": 1400,
+    "stock": 100,
+    "status": true,
+    "code": "PA1423",
+    "owner": "admin"
+},
+{
+    "title": "Eras Necklace",
+    "description": "Taylor Swift - Eras Necklace",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61MoZ6JIxiL._AC_UX569_.jpg"],
+    "category": "Accesories",
+    "price": 199,
+    "stock": 1000,
+    "status": true,
+    "code": "EN1568",
+    "owner": "admin"
+},
+{
+    "title": "Folklore - Vinyl",
+    "description": "Folklore - Vinyl",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61aCZ-+3EhL._SX522_.jpg"],
+    "category": "Vinyls",
+    "price": 1999,
+    "stock": 100,
+    "status": true,
+    "code": "FY1235",
+    "owner": "admin"
+},
+{
+    "title": "Midnights - Vinyl",
+    "description": "Midnights - Vinyl",
+    "thumbnails": ["https://m.media-amazon.com/images/I/41573DgTorL._SX300_SY300_QL70_FMwebp_.jpg"],
+    "category": "Vinyls",
+    "price": 2013,
+    "stock": 100,
+    "status": true,
+    "code": "MY1587",
+    "owner": "admin"
+},
+{
+    "title": "Lover - Vinyl",
+    "description": "Lover - Vinyl",
+    "thumbnails": ["https://m.media-amazon.com/images/I/61u--WQvvVL._SX425_.jpg"],
+    "category": "Vinyls",
+    "price": 2990,
+    "stock": 100,
+    "status": true,
+    "code": "LY8945",
+    "owner": "admin"
+},
+{
+    "title": "1989 - Vinyl",
+    "description": "1989 - Vinyl",
+    "thumbnails": ["https://store.taylorswift.com/cdn/shop/files/8wU8sU2k4gvB0i8MJ4wakKkWpJwpOpAO-1_600x.png?v=1691644823"],
+    "category": "Vinyls",
+    "price": 1989,
+    "stock": 100,
+    "status": true,
+    "code": "VY7894",
+    "owner": "admin"
+},
+{
+    "title": "Speak Now - Vinyl",
+    "description": "Speak Now - Vinyl",
+    "thumbnails": ["https://store.taylorswift.com/cdn/shop/files/7dQEp2mbYqd96sibsBtB2_600x.png?v=1687622599"],
+    "category": "Vinyls",
+    "price": 1800,
+    "stock": 100,
+    "status": true,
+    "code": "SY8942",
+    "owner": "admin"
+},
+{
+    "title": "Evermore - Vinyl",
+    "description": "Evermore - Vinyl",
+    "thumbnails": ["https://store.taylorswift.com/cdn/shop/products/IMG_8271_600x.png?v=1648835383"],
+    "category": "Vinyls",
+    "price": 2199,
+    "stock": 100,
+    "status": true,
+    "code": "EY7894",
+    "owner": "admin"
+},
+{
+    "title": "Red - Vinyl",
+    "description": "Red - Vinyl",
+    "thumbnails": ["https://m.media-amazon.com/images/I/31ZV0yI4+jL._SX425_.jpg"],
+    "category": "Vinyls",
+    "price": 2199,
+    "stock": 100,
+    "status": true,
+    "code": "RY4658",
+    "owner": "admin"
+}
+    
+]
